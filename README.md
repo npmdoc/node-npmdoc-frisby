@@ -21,43 +21,22 @@
 ```json
 
 {
-    "author": {
-        "name": "Vance Lucas"
-    },
-    "bugs": {
-        "url": "https://github.com/vlucas/frisby/issues"
+    "name": "frisby",
+    "version": "0.8.5",
+    "description": "Frisby.js: REST API Endpoint Testing built on Jasmine",
+    "homepage": "http://frisbyjs.com",
+    "author": "Vance Lucas <vance@vancelucas.com>",
+    "license": {
+        "type": "BSD"
     },
     "contributors": [
-        {
-            "name": "Eric Boehs"
-        },
-        {
-            "name": "Kevin Morey"
-        }
+        "Eric Boehs <ericboehs@gmail.com>",
+        "Kevin Morey"
     ],
-    "dependencies": {
-        "jsonschema": "1.0.0",
-        "mock-request": ">= 0.1.2",
-        "nock": "*",
-        "qs": "1.2.x",
-        "request": ">=2.51",
-        "stack-trace": "0.0.x",
-        "underscore": "1.6.x"
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/vlucas/frisby"
     },
-    "description": "Frisby.js: REST API Endpoint Testing built on Jasmine",
-    "devDependencies": {
-        "form-data": "~0.1.4",
-        "jasmine-node": "~1.14.5"
-    },
-    "directories": {},
-    "dist": {
-        "shasum": "a7f0d125938d77e1c1ed5ed2f32a2cdc56a8a160",
-        "tarball": "https://registry.npmjs.org/frisby/-/frisby-0.8.5.tgz"
-    },
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "homepage": "http://frisbyjs.com",
     "keywords": [
         "testing",
         "api",
@@ -66,25 +45,26 @@
         "bdd",
         "frisby"
     ],
-    "license": {
-        "type": "BSD"
+    "dependencies": {
+        "request": ">=2.51",
+        "jsonschema": "1.0.0",
+        "stack-trace": "0.0.x",
+        "mock-request": ">= 0.1.2",
+        "nock": "*",
+        "underscore": "1.6.x",
+        "qs": "1.2.x"
+    },
+    "devDependencies": {
+        "jasmine-node": "~1.14.5",
+        "form-data": "~0.1.4"
     },
     "main": "./lib/frisby",
-    "maintainers": [
-        {
-            "name": "brightbit"
-        }
-    ],
-    "name": "frisby",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/vlucas/frisby.git"
+    "engines": {
+        "node": ">= 0.10.0"
     },
     "scripts": {
         "test": "jasmine-node spec/"
-    },
-    "version": "0.8.5"
+    }
 }
 ```
 
