@@ -1,6 +1,6 @@
 # npmdoc-frisby
 
-#### api documentation for  [frisby (v0.8.5)](http://frisbyjs.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-frisby.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-frisby) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-frisby.svg)](https://travis-ci.org/npmdoc/node-npmdoc-frisby)
+#### basic api documentation for  [frisby (v0.8.5)](http://frisbyjs.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-frisby.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-frisby) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-frisby.svg)](https://travis-ci.org/npmdoc/node-npmdoc-frisby)
 
 #### Frisby.js: REST API Endpoint Testing built on Jasmine
 
@@ -21,22 +21,43 @@
 ```json
 
 {
-    "name": "frisby",
-    "version": "0.8.5",
-    "description": "Frisby.js: REST API Endpoint Testing built on Jasmine",
-    "homepage": "http://frisbyjs.com",
-    "author": "Vance Lucas <vance@vancelucas.com>",
-    "license": {
-        "type": "BSD"
+    "author": {
+        "name": "Vance Lucas"
+    },
+    "bugs": {
+        "url": "https://github.com/vlucas/frisby/issues"
     },
     "contributors": [
-        "Eric Boehs <ericboehs@gmail.com>",
-        "Kevin Morey"
+        {
+            "name": "Eric Boehs"
+        },
+        {
+            "name": "Kevin Morey"
+        }
     ],
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/vlucas/frisby"
+    "dependencies": {
+        "jsonschema": "1.0.0",
+        "mock-request": ">= 0.1.2",
+        "nock": "*",
+        "qs": "1.2.x",
+        "request": ">=2.51",
+        "stack-trace": "0.0.x",
+        "underscore": "1.6.x"
     },
+    "description": "Frisby.js: REST API Endpoint Testing built on Jasmine",
+    "devDependencies": {
+        "form-data": "~0.1.4",
+        "jasmine-node": "~1.14.5"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "a7f0d125938d77e1c1ed5ed2f32a2cdc56a8a160",
+        "tarball": "https://registry.npmjs.org/frisby/-/frisby-0.8.5.tgz"
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "homepage": "http://frisbyjs.com",
     "keywords": [
         "testing",
         "api",
@@ -45,26 +66,26 @@
         "bdd",
         "frisby"
     ],
-    "dependencies": {
-        "request": ">=2.51",
-        "jsonschema": "1.0.0",
-        "stack-trace": "0.0.x",
-        "mock-request": ">= 0.1.2",
-        "nock": "*",
-        "underscore": "1.6.x",
-        "qs": "1.2.x"
-    },
-    "devDependencies": {
-        "jasmine-node": "~1.14.5",
-        "form-data": "~0.1.4"
+    "license": {
+        "type": "BSD"
     },
     "main": "./lib/frisby",
-    "engines": {
-        "node": ">= 0.10.0"
+    "maintainers": [
+        {
+            "name": "brightbit"
+        }
+    ],
+    "name": "frisby",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/vlucas/frisby.git"
     },
     "scripts": {
         "test": "jasmine-node spec/"
-    }
+    },
+    "version": "0.8.5",
+    "bin": {}
 }
 ```
 
